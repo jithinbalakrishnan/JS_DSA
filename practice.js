@@ -1,12 +1,22 @@
-let arr = ["0001", "00200", "003001"]
+let lengthOfLongestSubstring = function (str) {
+    let arr = []
+    let longestStringLength = 0;
+    for(let i= 0 ; i< str.length; i++) {
+        // console.log('letter', str[i])
 
-function removeItems (input_arr) {
-    let newArr = []
-    for(let i = 0 ; i< input_arr.length; i++) {
-        let str = input_arr[i]
-        let newStr = str.replaceAll('0', '')
-        newArr.push(newStr)
+        let charIndex = arr.indexOf(str[i])
+        if(charIndex !== -1) {
+            arr.splice(0, charIndex +1)
+        }
+        // console.log('charIndex', charIndex)
+
+        arr.push(str[i])
+        console.log('arr', arr)
+        console.log( arr.length)
+        // longestStringLength = longestStringLength  > arr.length ? longestStringLength : arr.length;
     }
-    return newArr;
+    // console.log('longestStringLength', longestStringLength)
+    // console.log('arr', arr)
 }
-console.log(removeItems(arr))
+
+console.log(lengthOfLongestSubstring("pwwkew"))
