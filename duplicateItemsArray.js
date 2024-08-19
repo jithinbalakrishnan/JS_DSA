@@ -56,3 +56,12 @@ const removeDuplicateItems = (input_arr) => {
     return updatedArr
 }
 console.log(removeDuplicateItems(arr1))
+
+const items = [1, 2, 3, 1, 2, 3, 7, 8, 7];
+
+let result = items.reduce((ac, cu) => {
+    if(!ac.includes(cu)) {
+        ac.push(cu)
+    }
+    return ac
+},[])

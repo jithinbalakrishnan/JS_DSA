@@ -1,3 +1,4 @@
+// A prime number is a natural number greater than 1, which is only divisible by 1 and itself.
 function isPrime(num) {
     if(num === 1 || num ===2 ) return false
     for(let j= 2; j< num; j++) {

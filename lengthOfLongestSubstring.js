@@ -1,3 +1,6 @@
+// Longest substring without repeating characters 
+// https://duncan-mcardle.medium.com/leetcode-problem-2-longest-substring-without-repeating-characters-javascript-993890bf8eac
+
 var lengthOfLongestSubstring = function (s) {
     // Initialise an array to store the running characters and a longest string length variable
     let currentString = [];
