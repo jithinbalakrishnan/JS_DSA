@@ -14,9 +14,11 @@ let tech = [
                let data1 =  result[item.name]
                data1.push(item)
                result[item.name] = data1
+           } else {
+            result[item.name] = [{...item}]
            }
            
-           result[item.name] = [{...item}]
+           
            
        })
        console.log(result)
