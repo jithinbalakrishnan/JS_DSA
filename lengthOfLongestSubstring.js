@@ -26,7 +26,7 @@ var lengthOfLongestSubstring = function (s) {
             longestStringLength,
             currentString.length
         );
-        word = arr.length > word.length ? arr.join('') : word
+        word = currentString.length > word.length ? currentString.join('') : word
     }
 
     return longestStringLength;
